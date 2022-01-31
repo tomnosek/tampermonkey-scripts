@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         CSFD beautification
 // @namespace    https://www.csfd.cz/
-// @version      0.3
+// @version      0.4
 // @description  Makes ČSFD, Czech/Slovak portal about movies and TV series at csfd.cz, more usable with the current design. For example, it widens the layout or displays actions without needing to click on a button.
 // @author       Tomas Nosek
 // @include      https://www.csfd.cz/*
@@ -53,7 +53,7 @@
     $('.box--homepage-csfd-cinema').hide();
     $('.box--homepage-movie-lists').parent().parent().hide();
     $('h2:contains("Nové recenze TOP uživatelů")').parent().parent().parent().parent().hide();
-    $('h2:contains("TV tipy dne")').parent().parent().parent().parent().hide();
+    $('header.box-header > h2:contains("TV tipy dne")').parent().parent().parent().parent().hide();
     $('#video-slider').css("height", "");
     $('.main-homepage > .row > .column-70').css("width", "50%");
     $('.main-homepage > .row > .column-30').css("width", "50%").prepend($('h2:contains("Novinky")').parent().parent());
